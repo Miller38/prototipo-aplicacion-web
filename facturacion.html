@@ -33,11 +33,72 @@
 </head>
 
 <body>
-    <h1>Panel de facturacion</h1>
-    <br><br><br>
-    <h3>Actualmente en construccion</h3>
+    
+  
+    <!-- --------------------------------------------------------------------------------------- -->
+    <main class="container-fluid mt-4 rounded p-4">
+        <!-- Contenedor principal con márgenes, bordes redondeados y relleno -->
+        <ol class="list-unstyled"> <!-- Lista sin estilos -->
+            <li class="bg-white rounded shadow-lg p-4 mb-4">
+                <!-- Elemento de lista con fondo blanco, bordes redondeados, sombra y relleno -->
+                <h2 class="mb-3 text-center"><a href="#introduccion" class="text-decoration-none">Facturacion
+            </a></h2> <!-- Título de nivel 2 centrado con un enlace -->
 
 
-</body>
+
+            </li>
+            <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5 shadow-lg p-4 mb-4"
+                tabindex="-1" role="dialog" id="modalChoice">
+                
+                            <!-- Contenedor del formulario -->
+                            <div class="container mt-5">
+                               
+                                  <div class="form-group">
+                                    <label for="cliente">Cliente:</label>
+                                    <input type="text" class="form-control" id="cliente" placeholder="Nombre del cliente">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="fecha">Fecha:</label>
+                                    <input type="date" class="form-control" id="fecha">
+                                  </div>
+                                  <div class="form-group" id="items">
+                                    <label for="productos">Productos:</label>
+                                    <div class="input-group mb-2">
+                                      <input type="text" class="form-control" placeholder="Nombre del producto">
+                                      <input type="number" class="form-control" placeholder="Cantidad">
+                                      <input type="number" class="form-control" placeholder="Precio unitario">
+                                      <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary delete-btn" type="button">Eliminar</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <button type="button" class="btn btn-success mb-3" id="add-item">Agregar ítem</button>
+                                  <div class="form-group">
+                                    <label for="total">Total:</label>
+                                    <input type="number" class="form-control" id="total" placeholder="Total de la factura">
+                                  </div>
+                                  <br>
+                                  <button type="submit" class="btn btn-primary">Enviar factura</button>
+                                  <button type="submit" class="btn btn-secondary btn-without-style"><a href="/admin.html" class="text-decoration-none text-white">Regresar</a></button>       
+
+                                </form>
+                              </div>
+                            
+                        </div>
+                    </div>            
+                </div>
+            </div>
+
+        </ol>
+    </main>
+    
+    <!-- Bootstrap JS (opcional, solo si necesitas funcionalidades JS de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+  </body>
+  
 
 </html>
