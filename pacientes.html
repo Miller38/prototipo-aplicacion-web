@@ -23,21 +23,64 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- link style.css -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
-    <!-- titulo pestaña navegador -->
-    <title>Pcientes</title>
-</head>
 
 <body>
-    <h1>Panel de Gestion de pacientes</h1>
-    <br><br><br>
-    <h3>Actualmente en construccion</h3>
+    <main class="container-fluid mt-4 rounded p-4">
+        <!-- Contenedor principal con márgenes, bordes redondeados y relleno -->
+        <ol class="list-unstyled"> <!-- Lista sin estilos -->
+            <li class="bg-white rounded shadow-lg p-4 mb-4">
+                <!-- Elemento de lista con fondo blanco, bordes redondeados, sombra y relleno -->
+                <h2 class="mb-3 text-center"><a href="#introduccion" class="text-decoration-none">Gestion de
+                        Pacientes</a></h2> <!-- Título de nivel 2 centrado con un enlace -->
 
 
+
+            </li>
+            <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5 shadow-lg p-4 mb-4"
+                tabindex="-1" role="dialog" id="modalChoice">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-3 shadow-lg">
+                        <div class="modal-body p-4 text-center">
+                            <!-- Contenedor del formulario -->
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombre" class="col-sm-2 col-form-label"></label>
+                                    <input type="text" class="form-control" id="nombre"
+                                        placeholder="Ingrese el nombre del paciente">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="apellido" class="form-label"></label>
+                                    <input type="text" class="form-control" id="apellido"
+                                        placeholder="Ingrese el apellido del paciente">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="edad" class="form-label"></label>
+                                    <input type="number" class="form-control" id="edad"
+                                        placeholder="Ingrese la edad del paciente">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label"></label>
+                                    <input type="tel" class="form-control" id="telefono"
+                                        placeholder="Ingrese el teléfono del paciente">
+                                </div>
+                                <br><br>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="submit" class="btn btn-primary btn-without-style"><a href="/admin.html" class="text-decoration-none text-white">Agregar Paciente</a></button>
+                                <button type="submit" class="btn btn-secondary btn-without-style"><a href="/admin.html" class="text-decoration-none text-white">Regresar</a></button>       
+                                </div>
+                            </form>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+
+        </ol>
+    </main>
 </body>
 
 </html>
