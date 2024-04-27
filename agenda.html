@@ -32,10 +32,85 @@
 </head>
 
 <body>
-    <h1>Panel de Agenda</h1>
-    <br><br><br>
-    <h3>Actualmente en construccion</h3>
+    <main class="container-fluid mt-4 rounded p-4">
+        <!-- Contenedor principal con márgenes, bordes redondeados y relleno -->
+        <ol class="list-unstyled"> <!-- Lista sin estilos -->
+            <li class="bg-white rounded shadow-lg p-4 mb-4">
+                <!-- Elemento de lista con fondo blanco, bordes redondeados, sombra y relleno -->
+                <h2 class="mb-3 text-center"><a href="#introduccion" class="text-decoration-none">Agenda de Pacientes
+                    </a></h2> <!-- Título de nivel 2 centrado con un enlace -->
 
+
+
+            </li>
+            <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5 shadow-lg p-4 mb-4"
+                tabindex="-1" role="dialog" id="modalChoice">
+
+                <!-- Contenedor del formulario -->
+                <div class="container">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre"
+                                    placeholder="Ingrese el nombre del paciente">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido"
+                                    placeholder="Ingrese el apellido del paciente">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" class="form-control" id="telefono"
+                                    placeholder="Ingrese el número de teléfono del paciente">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="direccion">Dirección:</label>
+                                <input type="text" class="form-control" id="direccion"
+                                    placeholder="Ingrese la dirección del paciente">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="motivo">Motivo de la cita:</label>
+                            <textarea class="form-control" id="motivo" rows="3"
+                                placeholder="Ingrese el motivo de la cita"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="fecha">Fecha de cita:</label>
+                                <input type="date" class="form-control" id="fecha">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="hora">Hora de cita:</label>
+                                <input type="time" class="form-control" id="hora">
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Agendar cita</button>
+                        <button type="submit" class="btn btn-secondary btn-without-style"><a href="/admin.html" class="text-decoration-none text-white">Regresar</a></button>       
+
+                    </form>
+                </div>
+
+
+            </div>
+            </div>
+            </div>
+            </div>
+
+        </ol>
+    </main>
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 

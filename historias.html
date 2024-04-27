@@ -33,9 +33,100 @@
 </head>
 
 <body>
-    <h1>Panel de Historias clinicas</h1>
-    <br><br><br>
-    <h3>Actualmente en construccion</h3>
+    <main class="container-fluid mt-4 rounded p-4">
+        <!-- Contenedor principal con márgenes, bordes redondeados y relleno -->
+        <ol class="list-unstyled"> <!-- Lista sin estilos -->
+            <li class="bg-white rounded shadow-lg p-4 mb-4">
+                <!-- Elemento de lista con fondo blanco, bordes redondeados, sombra y relleno -->
+                <h2 class="mb-3 text-center"><a href="#introduccion" class="text-decoration-none">Historial de Pacientes
+                    </a></h2> <!-- Título de nivel 2 centrado con un enlace -->
+
+
+
+            </li>
+            <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5 shadow-lg p-4 mb-4"
+                tabindex="-1" role="dialog" id="modalChoice">
+
+                <!-- Contenedor del formulario -->
+                <div class="container mt-5">
+                   
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2 shadow-lg p-4 mb-4 rounded-2">
+                            <div class="card">
+                                <div class="card-body" style="font-size: 1.2em;">
+                                    <h5 class="card-title" style="font-size: 1.2em;" >Información del Paciente</h5>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre:</label>
+                                            <input type="text" class="form-control" id="nombre"
+                                                placeholder="Ingrese el nombre del paciente">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="edad">Edad:</label>
+                                                <input type="number" class="form-control" id="edad"
+                                                    placeholder="Ingrese la edad del paciente">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="genero">Género:</label>
+                                                <select id="genero" class="form-control">
+                                                    <option selected>Seleccionar...</option>
+                                                    <option>Masculino</option>
+                                                    <option>Femenino</option>
+                                                    <option>Otro</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="diagnostico">Diagnóstico:</label>
+                                            <textarea class="form-control" id="diagnostico" rows="3"
+                                                placeholder="Ingrese el diagnóstico del paciente"></textarea>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="fecha_ingreso">Fecha de Ingreso:</label>
+                                                <input type="date" class="form-control" id="fecha_ingreso">
+                                            </div>
+                                          
+                                        </div>
+                                        <br>
+                                        <button type="submit" class="btn btn-primary">Guardar</button>
+                                        <button type="submit" class="btn btn-secondary btn-without-style"><a href="/admin.html" class="text-decoration-none text-white">Regresar</a></button>       
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5 ">
+                        <div class="col-md-8 offset-md-2 shadow-lg p-4 mb-4 rounded-3" style="font-size: 1.2em;">
+                            <h5>Historial de Pacientes Registrados:</h5>
+                            <ul class="list-group ">
+                                <!-- Aquí se mostrarán los pacientes registrados -->
+                                <li class="list-group-item">Paciente 1</li>
+                                <li class="list-group-item">Paciente 2</li>
+                                <li class="list-group-item">Paciente 3</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            </div>
+            </div>
+            </div>
+
+        </ol>
+    </main>
+
+    <!-- Bootstrap JS (opcional, solo si necesitas funcionalidades JS de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 
 </body>
