@@ -35,7 +35,7 @@
         <ol class="list-unstyled"> <!-- Lista sin estilos -->
             <li class="bg-white rounded shadow-lg p-4 mb-4">
                 <!-- Elemento de lista con fondo blanco, bordes redondeados, sombra y relleno -->
-                <h2 class="mb-3 text-center"><a href="#introduccion" class="text-decoration-none">Gestion de
+                <h2 class="mb-3 text-center"><a href="#introduccion" class="text-decoration-none">Lista de
                         Pacientes</a></h2> <!-- Título de nivel 2 centrado con un enlace -->
 
 
@@ -43,37 +43,41 @@
             </li>
             <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5 shadow-lg p-4 mb-4"
                 tabindex="-1" role="dialog" id="modalChoice">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content rounded-3 shadow-lg">
-                        <div class="modal-body p-4 text-center">
+                
                             <!-- Contenedor del formulario -->
-                            <form>
-                                <div class="mb-3">
-                                    <label for="nombre" class="col-sm-2 col-form-label"></label>
-                                    <input type="text" class="form-control" id="nombre"
-                                        placeholder="Ingrese el nombre del paciente">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="apellido" class="form-label"></label>
-                                    <input type="text" class="form-control" id="apellido"
-                                        placeholder="Ingrese el apellido del paciente">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="edad" class="form-label"></label>
-                                    <input type="number" class="form-control" id="edad"
-                                        placeholder="Ingrese la edad del paciente">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="telefono" class="form-label"></label>
-                                    <input type="tel" class="form-control" id="telefono"
-                                        placeholder="Ingrese el teléfono del paciente">
-                                </div>
-                                <br><br>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <button type="submit" class="btn btn-primary btn-without-style"><a href="/listar-pacientes.html" class="text-decoration-none text-white">Agregar Paciente</a></button>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                               
+                              </table>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                 <button type="submit" class="btn btn-secondary btn-without-style"><a href="/admin.html" class="text-decoration-none text-white">Regresar</a></button>       
                                 </div>
-                            </form>
                         </div>
                     </div>            
                 </div>
