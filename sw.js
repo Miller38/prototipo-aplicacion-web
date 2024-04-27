@@ -1,4 +1,4 @@
-const CACHE_NAME = "v1_cache_sistemaDeInformacion",
+const CACHE_NAME = "v1_cache_prototipo-aplicacion-web",
   urlsToCache = [
     "./",
     "./index.html",
