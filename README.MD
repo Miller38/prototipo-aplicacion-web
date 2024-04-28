@@ -1,6 +1,3 @@
-<img align="right" src="http://visitor-badge.laobi.icu/badge?page_id=Miller38.prototipo-aplicacion web" />
-
-
 <h3>Aplicacion web consultorio odontologico</h3>
 
 ![Preview 1](preview1.jpg)
@@ -17,6 +14,7 @@
 - Github
 - Netlify
 - Fontawesome
+- PWA
 
 <img src="https://skillicons.dev/icons?i=vscode,html,css,bootstrap,git,github,netlify" /> <br/>
 
