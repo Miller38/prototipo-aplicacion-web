@@ -1,8 +1,8 @@
 {
-    "name": "sistemaDeInformacion",
+    "name": "sistema De Informacion",
     "short_name": "SIMJVG",
     "description": "Bienvenido al sistema de sistemaDeInformacion",
-    "background_color": "#2B2B2B",
+    "background_color": "#c5baba",
     "theme_color": "#F0DB4F",
     "orientation": "portrait",
     "display": "standalone",
